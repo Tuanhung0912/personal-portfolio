@@ -80,8 +80,8 @@ export const navItems: NavItem[] = [
 ]
 
 export const socialLinks: SocialLink[] = [
-  { label: 'GitHub', href: 'https://github.com/', icon: FaGithub },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/', icon: FaLinkedin },
+  { label: 'GitHub', href: 'https://github.com/Tuanhung0912', icon: FaGithub },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/%C4%91inh-l%C3%AA-tu%E1%BA%A5n-h%C6%B0ng-7008322a9', icon: FaLinkedin },
   { label: 'Email', href: `mailto:${profile.email}`, icon: FaEnvelope },
 ]
 
@@ -116,7 +116,6 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Vite', level: 90, icon: SiVite },
       { name: 'Docker', level: 76, icon: FaDocker },
-      { name: 'Figma', level: 80, icon: FaFigma },
       { name: 'HTML', level: 95, icon: FaHtml5 },
       { name: 'CSS', level: 92, icon: FaCss3Alt },
       { name: 'JavaScript', level: 93, icon: SiJavascript },
