@@ -6,10 +6,10 @@ export const Skills = memo(() => (
   <div>
     <div className="section-heading compact">
       <span className="eyebrow">Skills</span>
-      <h2>Modern frontend craft with practical full-stack range.</h2>
+      <h2>Backend fundamentals centered on Java and Spring Boot.</h2>
       <p>
-        The stack is tuned for fast iteration, maintainable code, and production
-        performance.
+        The current skill set reflects fresher-level backend practice with APIs,
+        databases, testing tools, and a basic frontend understanding.
       </p>
     </div>
     <div className="skills-grid">

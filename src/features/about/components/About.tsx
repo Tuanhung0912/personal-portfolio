@@ -5,7 +5,7 @@ import { profile, quickFacts, stats } from '@/data/portfolio'
 
 export const About = memo(() => {
   const traits = useMemo(
-    () => ['Product-minded', 'Performance-focused', 'Type-safe', 'Detail-oriented'],
+    () => ['Java-focused', 'API design', 'SQL fundamentals', 'Willing to learn'],
     [],
   )
 
@@ -13,10 +13,11 @@ export const About = memo(() => {
     <div className="section-grid about-grid">
       <div className="section-heading">
         <span className="eyebrow">About</span>
-        <h2>Clean interfaces backed by reliable engineering.</h2>
+        <h2>Fresh graduate building a strong Java backend foundation.</h2>
         <p>
-          I turn product ideas into responsive, maintainable applications with
-          careful attention to motion, accessibility, and developer experience.
+          I focus on writing understandable backend code, designing REST APIs,
+          working with relational databases, and improving through hands-on
+          Spring Boot projects.
         </p>
       </div>
       <div className="about-content">

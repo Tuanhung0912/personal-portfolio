@@ -1,23 +1,25 @@
 import {
   FaBriefcase,
   FaCss3Alt,
-  FaDocker,
   FaEnvelope,
-  FaFigma,
   FaGithub,
   FaHtml5,
+  FaJava,
   FaLinkedin,
-  FaNodeJs,
   FaReact,
 } from 'react-icons/fa'
 import {
-  SiExpress,
-  SiFramer,
+  SiDocker,
+  SiGit,
+  SiHibernate,
+  SiIntellijidea,
   SiJavascript,
-  SiMongodb,
-  SiNextdotjs,
+  SiMysql,
+  SiPostman,
   SiPostgresql,
-  SiTailwindcss,
+  SiRedis,
+  SiSpringboot,
+  SiSwagger,
   SiTypescript,
   SiVite,
 } from 'react-icons/si'
@@ -47,7 +49,7 @@ export type SkillCategory = {
 
 export type Project = {
   title: string
-  category: 'Web' | 'Dashboard' | 'Automation'
+  category: 'Backend' | 'API' | 'Web'
   description: string
   stack: string[]
   accent: string
@@ -65,10 +67,10 @@ export type ExperienceItem = {
 
 export const profile = {
   name: 'DINH LE TUAN HUNG',
-  role: 'Full-Stack Developer',
+  role: 'Java Spring Boot Backend Developer',
   location: 'Ho Chi Minh City, Vietnam',
   email: 'tuanhung.bh2003@gmail.com',
-  bio: 'I build fast, polished web products with React, TypeScript, and modern backend systems. My work focuses on clean interfaces, reliable delivery, and measurable product outcomes.',
+  bio: 'Fresh graduate focused on Java backend development. I am building practical experience with Spring Boot, RESTful APIs, SQL databases, authentication, and clean service-layer architecture.',
 }
 
 export const navItems: NavItem[] = [
@@ -81,109 +83,118 @@ export const navItems: NavItem[] = [
 
 export const socialLinks: SocialLink[] = [
   { label: 'GitHub', href: 'https://github.com/Tuanhung0912', icon: FaGithub },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/%C4%91inh-l%C3%AA-tu%E1%BA%A5n-h%C6%B0ng-7008322a9', icon: FaLinkedin },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/%C4%91inh-l%C3%AA-tu%E1%BA%A5n-h%C6%B0ng-7008322a9',
+    icon: FaLinkedin,
+  },
   { label: 'Email', href: `mailto:${profile.email}`, icon: FaEnvelope },
 ]
 
 export const stats = [
-  { value: '35+', label: 'Projects shipped' },
-  { value: '5+', label: 'Years building' },
-  { value: '12', label: 'Core technologies' },
+  { value: '2026', label: 'Fresh graduate' },
+  { value: 'Java', label: 'Main backend focus' },
+  { value: '3+', label: 'Backend practice projects' },
 ]
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: 'Frontend',
-    skills: [
-      { name: 'React', level: 94, icon: FaReact },
-      { name: 'TypeScript', level: 91, icon: SiTypescript },
-      { name: 'Next.js', level: 86, icon: SiNextdotjs },
-      { name: 'Tailwind CSS', level: 88, icon: SiTailwindcss },
-      { name: 'Framer Motion', level: 82, icon: SiFramer },
-    ],
-  },
-  {
     title: 'Backend',
     skills: [
-      { name: 'Java', level: 89, icon: FaNodeJs },
-      { name: 'Spring Boot', level: 84, icon: SiExpress },
-      { name: 'MySQL', level: 81, icon: SiPostgresql },
-      { name: 'PostgreSQL', level: 78, icon: SiMongodb },
+      { name: 'Java', level: 78, icon: FaJava },
+      { name: 'Spring Boot', level: 74, icon: SiSpringboot },
+      { name: 'RESTful API', level: 76, icon: SiSwagger },
+      { name: 'JPA / Hibernate', level: 70, icon: SiHibernate },
+      { name: 'Spring Security', level: 66, icon: SiSpringboot },
     ],
   },
   {
-    title: 'Tools',
+    title: 'Database',
     skills: [
-      { name: 'Vite', level: 90, icon: SiVite },
-      { name: 'Docker', level: 76, icon: FaDocker },
-      { name: 'HTML', level: 95, icon: FaHtml5 },
-      { name: 'CSS', level: 92, icon: FaCss3Alt },
-      { name: 'JavaScript', level: 93, icon: SiJavascript },
+      { name: 'MySQL', level: 76, icon: SiMysql },
+      { name: 'PostgreSQL', level: 68, icon: SiPostgresql },
+      { name: 'SQL Design', level: 72, icon: SiMysql },
+      { name: 'Redis Basics', level: 55, icon: SiRedis },
+    ],
+  },
+  {
+    title: 'Tools & Frontend Basics',
+    skills: [
+      { name: 'Git', level: 74, icon: SiGit },
+      { name: 'Postman', level: 78, icon: SiPostman },
+      { name: 'Docker Basics', level: 58, icon: SiDocker },
+      { name: 'IntelliJ IDEA', level: 80, icon: SiIntellijidea },
+      { name: 'React Basics', level: 58, icon: FaReact },
+      { name: 'TypeScript Basics', level: 54, icon: SiTypescript },
+      { name: 'Vite', level: 60, icon: SiVite },
+      { name: 'HTML', level: 72, icon: FaHtml5 },
+      { name: 'CSS', level: 66, icon: FaCss3Alt },
+      { name: 'JavaScript', level: 64, icon: SiJavascript },
     ],
   },
 ]
 
 export const projects: Project[] = [
   {
-    title: 'Commerce Intelligence Suite',
-    category: 'Dashboard',
+    title: 'Bookstore Management REST API',
+    category: 'Backend',
     description:
-      'Analytics workspace for tracking revenue, conversion, and campaign performance across multiple storefronts.',
-    stack: ['React', 'TypeScript', 'PostgreSQL'],
+      'Spring Boot API for managing books, categories, users, carts, and orders with layered architecture and database persistence.',
+    stack: ['Java', 'Spring Boot', 'MySQL', 'Spring Data JPA'],
     accent: '#06b6d4',
-    liveUrl: 'https://example.com',
-    repoUrl: 'https://github.com/',
+    liveUrl: 'https://github.com/Tuanhung0912',
+    repoUrl: 'https://github.com/Tuanhung0912',
   },
   {
-    title: 'Creative Portfolio System',
+    title: 'Student Management API',
+    category: 'API',
+    description:
+      'CRUD API for student records, classes, and search filters, focused on validation, clean DTO mapping, and API documentation.',
+    stack: ['Spring Boot', 'PostgreSQL', 'Swagger', 'Postman'],
+    accent: '#8b5cf6',
+    liveUrl: 'https://github.com/Tuanhung0912',
+    repoUrl: 'https://github.com/Tuanhung0912',
+  },
+  {
+    title: 'Personal Portfolio Website',
     category: 'Web',
     description:
-      'High-performance portfolio engine with content collections, rich case studies, and animated transitions.',
-    stack: ['Vite', 'Framer Motion', 'CSS'],
-    accent: '#8b5cf6',
-    liveUrl: 'https://example.com',
-    repoUrl: 'https://github.com/',
-  },
-  {
-    title: 'Ops Automation Hub',
-    category: 'Automation',
-    description:
-      'Internal tool for orchestrating approval workflows, notifications, and reporting across distributed teams.',
-    stack: ['Node.js', 'Express', 'MongoDB'],
+      'Responsive portfolio website for presenting backend skills, academic projects, contact information, and learning direction.',
+    stack: ['React', 'Vite', 'TypeScript', 'CSS'],
     accent: '#22c55e',
-    liveUrl: 'https://example.com',
-    repoUrl: 'https://github.com/',
+    liveUrl: '#top',
+    repoUrl: 'https://github.com/Tuanhung0912',
   },
 ]
 
 export const experience: ExperienceItem[] = [
   {
-    role: 'Senior Frontend Engineer',
-    company: 'Product Studio',
-    period: '2024 - Present',
+    role: 'Java Backend Graduate',
+    company: 'University Graduation',
+    period: '2026',
     description:
-      'Lead the frontend architecture for SaaS products with a strong focus on performance and maintainability.',
-    highlights: ['Design system delivery', 'React performance tuning', 'Feature planning'],
+      'Completed undergraduate studies with a clear direction toward backend development using Java and Spring Boot.',
+    highlights: ['Object-oriented programming', 'Database fundamentals', 'Backend architecture'],
   },
   {
-    role: 'Full-Stack Developer',
-    company: 'Digital Agency',
-    period: '2021 - 2024',
+    role: 'Backend Project Practice',
+    company: 'Academic and personal projects',
+    period: '2024 - 2026',
     description:
-      'Built web apps, dashboards, and integrations for clients in commerce, education, and operations.',
-    highlights: ['API integrations', 'Admin dashboards', 'Production support'],
+      'Built small backend systems to practice REST API design, CRUD flows, authentication, validation, and SQL persistence.',
+    highlights: ['RESTful APIs', 'Spring Data JPA', 'Postman testing'],
   },
   {
-    role: 'Frontend Developer',
-    company: 'Freelance',
-    period: '2019 - 2021',
+    role: 'Continuous Learning',
+    company: 'Java and Spring ecosystem',
+    period: 'Present',
     description:
-      'Delivered responsive marketing sites, landing pages, and portfolio systems for small businesses.',
-    highlights: ['Responsive UI', 'SEO foundations', 'Client handoff'],
+      'Strengthening backend fundamentals through documentation, coding practice, debugging, and project-based learning.',
+    highlights: ['Spring Security basics', 'Docker basics', 'Clean code habits'],
   },
 ]
 
 export const quickFacts = [
-  { icon: FaBriefcase, label: 'Available for selected projects' },
+  { icon: FaBriefcase, label: 'Open to Java Backend Fresher roles' },
   { icon: FaEnvelope, label: profile.email },
 ]

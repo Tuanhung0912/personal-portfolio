@@ -36,10 +36,10 @@ export const Contact = memo(() => {
     <div className="section-grid contact-grid">
       <div className="section-heading">
         <span className="eyebrow">Contact</span>
-        <h2>Have a product, website, or workflow to build?</h2>
+        <h2>Open to Java Backend Fresher opportunities.</h2>
         <p>
-          Send a short note and I will reply with the next practical step for
-          the project.
+          I am looking for opportunities to contribute to backend teams, learn
+          from real systems, and grow with Java and Spring Boot.
         </p>
         <div className="contact-details">
           <a href={`mailto:${profile.email}`}>

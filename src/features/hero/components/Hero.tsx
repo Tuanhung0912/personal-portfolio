@@ -1,6 +1,6 @@
 import { memo, useMemo } from 'react'
 import { motion } from 'framer-motion'
-import { FiArrowDownRight, FiDownload } from 'react-icons/fi'
+import { FiArrowDownRight, FiMail } from 'react-icons/fi'
 import heroImage from '@/assets/hero.png'
 import { profile, socialLinks } from '@/data/portfolio'
 
@@ -62,7 +62,7 @@ export const Hero = memo(() => {
             View projects
           </a>
           <a className="button secondary" href="#contact">
-            <FiDownload aria-hidden="true" />
+            <FiMail aria-hidden="true" />
             Contact me
           </a>
         </motion.div>
@@ -92,8 +92,8 @@ export const Hero = memo(() => {
           <img src={heroImage} alt="" />
           <div className="terminal-preview" aria-label="Developer status">
             <span>status</span>
-            <strong>Building polished web systems</strong>
-            <code>React • TypeScript • Node</code>
+            <strong>Learning backend through practical APIs</strong>
+            <code>Java - Spring Boot - SQL</code>
           </div>
         </div>
       </motion.div>

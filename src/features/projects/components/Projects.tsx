@@ -3,7 +3,7 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import { motion } from 'framer-motion'
 import { projects, type Project } from '@/data/portfolio'
 
-const filters: Array<Project['category'] | 'All'> = ['All', 'Web', 'Dashboard', 'Automation']
+const filters: Array<Project['category'] | 'All'> = ['All', 'Backend', 'API', 'Web']
 
 export const Projects = memo(() => {
   const [activeFilter, setActiveFilter] = useState<Project['category'] | 'All'>('All')
@@ -24,10 +24,10 @@ export const Projects = memo(() => {
     <div>
       <div className="section-heading compact">
         <span className="eyebrow">Projects</span>
-        <h2>Selected work designed for clarity, speed, and scale.</h2>
+        <h2>Backend-focused projects built while learning by doing.</h2>
         <p>
-          A focused set of product surfaces, automation systems, and portfolio
-          experiences.
+          A practical set of APIs and portfolio work showing Java, Spring Boot,
+          database design, and documentation habits.
         </p>
       </div>
       <div className="filter-row" role="tablist" aria-label="Project category">

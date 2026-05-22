@@ -6,10 +6,10 @@ export const Experience = memo(() => (
   <div>
     <div className="section-heading compact">
       <span className="eyebrow">Experience</span>
-      <h2>Focused delivery across product and client environments.</h2>
+      <h2>Academic work, self-learning, and backend project practice.</h2>
       <p>
-        Experience spans production SaaS interfaces, integrations, dashboards,
-        and responsive websites.
+        The timeline is positioned honestly for a new graduate, with emphasis on
+        Java fundamentals, Spring Boot practice, and readiness for fresher roles.
       </p>
     </div>
     <div className="timeline">
