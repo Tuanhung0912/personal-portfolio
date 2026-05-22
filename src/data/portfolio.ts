@@ -64,10 +64,10 @@ export type ExperienceItem = {
 }
 
 export const profile = {
-  name: 'Tuan Hung',
+  name: 'DINH LE TUAN HUNG',
   role: 'Full-Stack Developer',
   location: 'Ho Chi Minh City, Vietnam',
-  email: 'hello@tuanhung.dev',
+  email: 'tuanhung.bh2003@gmail.com',
   bio: 'I build fast, polished web products with React, TypeScript, and modern backend systems. My work focuses on clean interfaces, reliable delivery, and measurable product outcomes.',
 }
 
@@ -105,10 +105,10 @@ export const skillCategories: SkillCategory[] = [
   {
     title: 'Backend',
     skills: [
-      { name: 'Node.js', level: 89, icon: FaNodeJs },
-      { name: 'Express', level: 84, icon: SiExpress },
-      { name: 'PostgreSQL', level: 81, icon: SiPostgresql },
-      { name: 'MongoDB', level: 78, icon: SiMongodb },
+      { name: 'Java', level: 89, icon: FaNodeJs },
+      { name: 'Spring Boot', level: 84, icon: SiExpress },
+      { name: 'MySQL', level: 81, icon: SiPostgresql },
+      { name: 'PostgreSQL', level: 78, icon: SiMongodb },
     ],
   },
   {
