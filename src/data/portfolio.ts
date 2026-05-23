@@ -38,7 +38,6 @@ export type SocialLink = {
 
 export type Skill = {
   name: string
-  level: number
   icon: IconType
 }
 
@@ -101,35 +100,35 @@ export const skillCategories: SkillCategory[] = [
   {
     title: 'Backend',
     skills: [
-      { name: 'Java', level: 78, icon: FaJava },
-      { name: 'Spring Boot', level: 74, icon: SiSpringboot },
-      { name: 'RESTful API', level: 76, icon: SiSwagger },
-      { name: 'JPA / Hibernate', level: 70, icon: SiHibernate },
-      { name: 'Spring Security', level: 66, icon: SiSpringboot },
+      { name: 'Java', icon: FaJava },
+      { name: 'Spring Boot', icon: SiSpringboot },
+      { name: 'RESTful API', icon: SiSwagger },
+      { name: 'JPA / Hibernate', icon: SiHibernate },
+      { name: 'Spring Security', icon: SiSpringboot },
     ],
   },
   {
     title: 'Database',
     skills: [
-      { name: 'MySQL', level: 76, icon: SiMysql },
-      { name: 'PostgreSQL', level: 68, icon: SiPostgresql },
-      { name: 'SQL Design', level: 72, icon: SiMysql },
-      { name: 'Redis Basics', level: 55, icon: SiRedis },
+      { name: 'MySQL', icon: SiMysql },
+      { name: 'PostgreSQL', icon: SiPostgresql },
+      { name: 'SQL Design', icon: SiMysql },
+      { name: 'Redis Basics', icon: SiRedis },
     ],
   },
   {
     title: 'Tools & Frontend Basics',
     skills: [
-      { name: 'Git', level: 74, icon: SiGit },
-      { name: 'Postman', level: 78, icon: SiPostman },
-      { name: 'Docker Basics', level: 58, icon: SiDocker },
-      { name: 'IntelliJ IDEA', level: 80, icon: SiIntellijidea },
-      { name: 'React Basics', level: 58, icon: FaReact },
-      { name: 'TypeScript Basics', level: 54, icon: SiTypescript },
-      { name: 'Vite', level: 60, icon: SiVite },
-      { name: 'HTML', level: 72, icon: FaHtml5 },
-      { name: 'CSS', level: 66, icon: FaCss3Alt },
-      { name: 'JavaScript', level: 64, icon: SiJavascript },
+      { name: 'Git', icon: SiGit },
+      { name: 'Postman', icon: SiPostman },
+      { name: 'Docker Basics', icon: SiDocker },
+      { name: 'IntelliJ IDEA', icon: SiIntellijidea },
+      { name: 'React Basics', icon: FaReact },
+      { name: 'TypeScript Basics', icon: SiTypescript },
+      { name: 'Vite', icon: SiVite },
+      { name: 'HTML', icon: FaHtml5 },
+      { name: 'CSS', icon: FaCss3Alt },
+      { name: 'JavaScript', icon: SiJavascript },
     ],
   },
 ]

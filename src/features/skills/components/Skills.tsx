@@ -16,11 +16,11 @@ export const Skills = memo(() => (
       {skillCategories.map((category) => (
         <div key={category.title} className="glass-card skill-category">
           <h3>{category.title}</h3>
-          <div className="skill-list">
+          <ul className="skill-list">
             {category.skills.map((skill, index) => {
               const Icon = skill.icon
               return (
-                <motion.div
+                <motion.li
                   key={skill.name}
                   className="skill-item"
                   initial={{ opacity: 0, y: 16 }}
@@ -28,25 +28,12 @@ export const Skills = memo(() => (
                   viewport={{ once: true, amount: 0.5 }}
                   transition={{ duration: 0.42, delay: index * 0.05 }}
                 >
-                  <div className="skill-meta">
-                    <span>
-                      <Icon aria-hidden="true" />
-                      {skill.name}
-                    </span>
-                    <strong>{skill.level}%</strong>
-                  </div>
-                  <div className="skill-track" aria-hidden="true">
-                    <motion.span
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.75, delay: 0.12 }}
-                    />
-                  </div>
-                </motion.div>
+                  <Icon aria-hidden="true" />
+                  <span>{skill.name}</span>
+                </motion.li>
               )
             })}
-          </div>
+          </ul>
         </div>
       ))}
     </div>
