@@ -121,6 +121,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'Git', icon: SiGit },
       { name: 'Postman', icon: SiPostman },
+      { name: 'Swagger', icon: SiSwagger },
       { name: 'Docker Basics', icon: SiDocker },
       { name: 'IntelliJ IDEA', icon: SiIntellijidea },
       { name: 'React Basics', icon: FaReact },
